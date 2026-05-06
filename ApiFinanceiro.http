@@ -5,5 +5,30 @@ Accept: application/json
 
 ###
 
-GET {{ApiFinanceiro_HostAddress}}/despesas
+POST {{ApiFinanceiro_HostAddress}}/auth/login
+Content-Type: application/json
+
+{
+  "email": "admin@thehome.com",
+  "senha": "admin123"
+}
+
+###
+
+GET {{ApiFinanceiro_HostAddress}}/cardapio
+Accept: application/json
+
+###
+
+GET {{ApiFinanceiro_HostAddress}}/produtos
+Accept: application/json
+
+###
+
+GET {{ApiFinanceiro_HostAddress}}/pedidos
+Accept: application/json
+
+###
+
+GET {{ApiFinanceiro_HostAddress}}/relatorios/vendas
 Accept: application/json
