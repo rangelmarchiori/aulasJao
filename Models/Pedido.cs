@@ -4,8 +4,10 @@ namespace ApiFinanceiro.Models
     {
         public Guid Id { get; set; } = Guid.NewGuid();
         public DateTime Data { get; set; } = DateTime.Now;
-        public string Status { get; set; } = "Recebido";
+        public string Status { get; set; } ;
         public required Guid UsuarioId { get; set; }
-        public List<ItemPedido> Itens { get; set; } = new();
+	public Usuario? Usuario { get; set; }
+        public List<ItemPedido> Itens { get; set; } = [];
+	public Pagamento? Pagamento {get; set; }
     }
 }

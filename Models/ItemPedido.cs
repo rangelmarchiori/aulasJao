@@ -7,5 +7,7 @@ namespace ApiFinanceiro.Models
         public required Guid ProdutoId { get; set; }
         public required int Quantidade { get; set; }
         public required decimal PrecoUnitario { get; set; }
+	public Pedido? Pedido { get; set; }
+	public Produto? Produto { get; set; }
     }
 }

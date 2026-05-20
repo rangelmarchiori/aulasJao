@@ -4,17 +4,19 @@ namespace ApiFinanceiro.Models
     {
         public Guid Id { get; set; } = Guid.NewGuid();
 
-        public required string Descricao { get; set; }
-
+	public required string Descricao { get; set; }
+	
         public required string Categoria { get; set; }
 
-        public required decimal Valor { get; set; }
+        public decimal Valor { get; set; }
 
-        public required DateOnly DataPrevisao { get; set; }
-        public required DateOnly DataRecebimento { get; set; }
+        public DateOnly DataPrevisao { get; set; }
 
-        public required Boolean Situacao { get; set; }
-        public required string Observacao {  get; set; }
+        public DateOnly? DataRecebimento { get; set; }
+
+        public string  Situacao { get; set; } ;
+
+        public string? Observacao { get; set; }
 
     }
 }

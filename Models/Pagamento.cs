@@ -5,6 +5,7 @@ namespace ApiFinanceiro.Models
         public Guid Id { get; set; } = Guid.NewGuid();
         public required Guid PedidoId { get; set; }
         public required string FormaPagamento { get; set; }
-        public string Status { get; set; } = "Pendente";
+	public Pedido? Pedido { get; set;}
+        public string Status { get; set; };
     }
 }
