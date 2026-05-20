@@ -7,6 +7,7 @@ namespace ApiFinanceiro.Models
         public required string Descricao { get; set; }
         public required decimal Preco { get; set; }
         public required Guid CategoriaId { get; set; }
+	public Categoria? Categoria { get; set; }
         public bool Disponivel { get; set; } = true;
     }
 }
