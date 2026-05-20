@@ -31,12 +31,21 @@ namespace ApiFinanceiro.Controllers
             {
                 return BadRequest(new { mensagem = "Email já cadastrado" });
             }
+	    
+	    if (usuarioDto.Tipo != "Admin" &&
+		usuarioDto.Tipo != "Cliente")
+	    {
+		return BadRequest(new
+		{
+		    mensagem = "Tipo inválido"
+		});
+	    }
 
             var usuario = new Usuario
             {
                 Nome = usuarioDto.Nome,
                 Email = usuarioDto.Email,
-                Senha = usuarioDto.Senha,
+                SenhaHash = usuarioDto.Senha,
                 Tipo = usuarioDto.Tipo
             };
 

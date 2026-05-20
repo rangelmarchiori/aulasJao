@@ -20,5 +20,8 @@ namespace ApiFinanceiro.Dtos
 
         [Required(ErrorMessage = "O campo DataPrevisao é obrigatório")]
         public required DateOnly DataPrevisao { get; set; }
+
+	public required string Situacao { get; set; }
+
     }
 }

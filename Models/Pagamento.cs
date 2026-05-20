@@ -6,6 +6,6 @@ namespace ApiFinanceiro.Models
         public required Guid PedidoId { get; set; }
         public required string FormaPagamento { get; set; }
 	public Pedido? Pedido { get; set;}
-        public string Status { get; set; };
+        public required string Status { get; set; }
     }
 }
