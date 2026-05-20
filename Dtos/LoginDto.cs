@@ -9,6 +9,6 @@ namespace ApiFinanceiro.Dtos
         public required string Email { get; set; }
 
         [Required]
-        public required string Senha { get; set; }
+        public required string SenhaHash { get; set; }
     }
 }

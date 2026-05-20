@@ -10,14 +10,14 @@ namespace ApiFinanceiro.Data
             {
                 Nome = "Administrador",
                 Email = "admin@thehome.com",
-                Senha = "admin123",
+                SenhaHash = "admin123",
                 Tipo = "admin"
             },
             new Usuario
             {
                 Nome = "Cliente Exemplo",
                 Email = "cliente@thehome.com",
-                Senha = "cliente123",
+                SenhaHash = "cliente123",
                 Tipo = "cliente"
             }
         };

@@ -14,7 +14,7 @@ namespace ApiFinanceiro.Models
 
         public DateOnly? DataRecebimento { get; set; }
 
-        public string  Situacao { get; set; } ;
+        public required string  Situacao { get; set; } 
 
         public string? Observacao { get; set; }
 

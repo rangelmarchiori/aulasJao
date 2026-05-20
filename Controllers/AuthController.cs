@@ -13,7 +13,7 @@ namespace ApiFinanceiro.Controllers
         {
             var usuario = TheHomeDatabase.Usuarios.FirstOrDefault(u =>
                 u.Email.Equals(loginDto.Email, StringComparison.OrdinalIgnoreCase)
-                && u.Senha == loginDto.Senha);
+                && u.SenhaHash == loginDto.SenhaHash);
 
             if (usuario is null)
             {

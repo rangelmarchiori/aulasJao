@@ -17,7 +17,7 @@ namespace ApiFinanceiro.Controllers
                 Categoria = "Divida",
                 DataPrevisao = new DateOnly(2026, 08, 15),
                 Observacao = "Aberto",
-                Situacao = true,
+                Situacao = "Aberto",
                 DataRecebimento = new DateOnly(2026, 08, 15)
             }
         };
@@ -38,7 +38,7 @@ namespace ApiFinanceiro.Controllers
                 Categoria = novaConta.Categoria,
                 DataPrevisao = novaConta.DataPrevisao,
                 Observacao = novaConta.Observacao,
-                Situacao = false,
+                Situacao = novaConta.Situacao,
                 DataRecebimento = new DateOnly(0001, 01, 01)
             };
 
